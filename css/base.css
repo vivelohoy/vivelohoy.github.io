@@ -49,6 +49,10 @@ div.content {
   margin-top: 70px;
   border-radius: 20px;
 }
+
+body div.container {
+  margin-bottom: 50px;    
+}
 p {
   line-height: 1.6em;
   margin: 5px 0 10px 0;
