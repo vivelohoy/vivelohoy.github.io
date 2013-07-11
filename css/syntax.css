@@ -1,11 +1,17 @@
-.highlight  {
-    background: #595858;
-    margin: 20px;
+div.highlight  {
+    background-color: #595858;
     padding: 10px;
     border-radius: 20px;
-    color: #fff;
-    overflow: scroll;
+    text-shadow: none;
 }
+
+div.highlight pre{
+  background-color: #595858;
+  color: #fff;
+  overflow: scroll;
+  
+}
+
 .highlight > * {
     padding: 10px;
 }

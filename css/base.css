@@ -7,9 +7,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
   line-height: 1;
   font-family: 'Text Me One', sans-serif;
+  letter-spacing:1px;
   background: url(../images/vivelohoy_bg_photo.jpg) #151515;
   color: #ddd;
-
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 1)
 }
 
 ol, ul { list-style: none; }
@@ -24,31 +25,29 @@ a.red-link { color: #ee3124; }
 
 a.red-link:hover, a.red-link:active { color: #444444; }
 
-h1 { margin: 10px 0 20px 0; font-size: 30px; line-height: 1.2em; font-weight: bold; }
-
-h2 { margin: 8px 0 15px 0; font-size: 25px; line-height: 1.2em; }
-
-h3 { margin: 8px 0 15px 0; font-size: 20px; line-height: 1.2em; }
-
-h4 { font-size: 16px; color: #777777; font-style: italic; margin: 12px 0 6px 0; }
-
-div.container {
-  position:relative;
+a.brand {
+    background: url(../images/vivelohoy_logo.png);
+    background-repeat: no-repeat;
 }
+
+h1 { margin: 10px 0 20px 0; font-size: 45px; line-height: 1.2em; }
+
+h2 { margin: 8px 0 15px 0; font-size: 40px; line-height: 1.2em; }
+
+h3 { margin: 8px 0 15px 0; font-size: 35px; line-height: 1.2em; }
+
+h4 { margin: 8px 0 15px 0; font-size: 30px; line-height: 1.2em; }
+
+h5 { margin: 8px 0 15px 0; font-size: 25px; line-height: 1.2em; }
+
+h6 { margin: 8px 0 15px 0; font-size: 20px; line-height: 1.2em; }
+
 div.content {
-  width: 90%;
   padding: 2%;
-  margin-left: 5%;
-  margin-right: 5%;
   background: #444;
-  float: left;
   margin-bottom: 10px;
-  margin-top: 30px;
+  margin-top: 70px;
   border-radius: 20px;
-}
-div.sidebar-right {
-  width: 30%;
-  float: left;
 }
 p {
   line-height: 1.6em;
@@ -56,3 +55,48 @@ p {
   font-size: 19px; 
 }
 
+code.file {
+  background: #fff;
+  color: #000;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 10px rgba(0,0,0,.3);
+  padding: 5px;
+  display: inline-block;
+  margin: 10px;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 1);
+  overflow: scroll;
+}
+
+code.note {
+  background: #FFFF45;
+  color: #000;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 10px rgba(0,0,0,.3);
+  padding: 5px;
+  display: inline-block;
+  margin: 10px;
+  text-shadow: none;
+  width: 90%;  
+  overflow: scroll;
+}
+
+code.tc {
+  background: #000;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 10px rgba(0,0,0,.3);
+  padding: 5px;
+  display: inline-block;
+  margin: 10px;
+  overflow: scroll;
+}
+@media (max-width: 979px) {
+  .navbar-fixed-top {
+      position: fixed;
+      margin-left: 0px;
+      margin-right: 0px;
+  }
+  div.content {
+    margin-top: 105px;    
+  }
+}

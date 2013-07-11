@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">      
+      <link href="{{ site.url }}/css/bootstrap.min.css" rel="stylesheet" />  
+      <link href="{{ site.url }}/css/bootstrap-responsive.min.css" rel="stylesheet" />
       <link href="{{ site.url }}/css/base.css" rel="stylesheet" />
       <link href="{{ site.url }}/css/syntax.css" rel="stylesheet" />
       <link href='http://fonts.googleapis.com/css?family=Text+Me+One' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <div>
-      <div class="content">
-        {{ content }}
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <a style="margin-left: 20px; width:210px; height:20px;" class="brand" href="http://www.vivelohoy.com/"></a>
+        <ul class="nav">
+          <li><a href="/">Home</a></li>
+        </ul>
       </div>
+    </div>
+
+    <div>
+      <div class="container">
+        <div class="container content">
+          {{ content }}
+        </div>
         
-      <div class="sidebar-right">
+        <div class="sidebar-right">
+        </div>
       </div>
     </div>
   </body>
