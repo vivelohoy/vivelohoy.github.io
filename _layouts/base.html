@@ -25,6 +25,14 @@
         </div>
 
         <a href="http://www.vivelohoy.com/contribuye/"><img class="pull-right" src="{{ site.url }}/images/contribute_sidebar.png"></img></a>
+
+        {% if page.author %}
+
+        <div class="container" id="author-box">
+          <a href="{{ page.author-link }}"><p>By: {{ page.author }}</p></a>
+        </div>
+
+        {% endif %}
       </div>
     </div>
   </body>
