@@ -1,41 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">      
-      <link href="{{ site.url }}/css/bootstrap.min.css" rel="stylesheet" />  
-      <link href="{{ site.url }}/css/bootstrap-responsive.min.css" rel="stylesheet" />
-      <link href="{{ site.url }}/css/base.css" rel="stylesheet" />
-      <link href="{{ site.url }}/css/syntax.css" rel="stylesheet" />
-      <link href='http://fonts.googleapis.com/css?family=Text+Me+One' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">      
+    <link href="{{ site.url }}/css/bootstrap.min.css" rel="stylesheet" />  
+    <link href="{{ site.url }}/css/base.css" rel="stylesheet" />
+    <link href="{{ site.url }}/css/syntax.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Text+Me+One' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <a style="margin-left: 20px; width:210px; height:20px;" class="brand" href="http://www.vivelohoy.com/temas/english"></a>
+    <div class="navbar navbar-default navbar-static-top">
+      <div class="navbar-inner"> 
         <ul class="nav">
+          <li><a class="brand" href="http://www.vivelohoy.com/">Vivelohoy</a></li>
           <li><a href="/">Home</a></li>
         </ul>
       </div>
     </div>
 
-    <div>
-      <div class="container">
-        <div class="container content">
-          {{ content }}
-        </div>
-
-        <a href="http://www.vivelohoy.com/contribuye/"><img class="pull-right" src="{{ site.url }}/images/contribute_sidebar.png"></img></a>
-
-        {% if page.author %}
-
-        <div class="container" id="author-box">
-          <a href="{{ page.author-link }}"><p>By: {{ page.author }}</p></a>
-        </div>
-
-        {% endif %}
+    <div class="container">
+      
+      <div class="container content">
+        {{ content }}
       </div>
+
+      {% if page.author %}
+      <div class="container" id="author-box">
+        <a href="{{ page.author-link }}"><p>By: {{ page.author }}</p></a>
+      </div>
+      {% endif %}
+
     </div>
   </body>
-
-
 </html>
